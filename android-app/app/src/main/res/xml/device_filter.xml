@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  USB device filter for Android USB Host mode.
+  Matches:
+    - CH340/CH341 USB-UART bridges (VID 0x1A86, PID 0x7523 / 0x5523)
+    - CP2102/CP2104 bridges (VID 0x10C4, PID 0xEA60 / 0xEA70)
+    - FTDI FT232 (VID 0x0403, PID 0x6001)
+    - Generic CDC-ACM (class 0x02, subclass 0x02)
+
+  These cover the common USB-UART bridges found on ESP32 DevKit boards.
+  The app will also enumerate all connected USB devices at runtime via
+  UsbManager so this list only affects the auto-launch intent.
+-->
+<resources>
+    <!-- CH340 / CH341 -->
+    <usb-device vendor-id="6790" product-id="29987" />   <!-- 0x1A86 / 0x7523 -->
+    <usb-device vendor-id="6790" product-id="21795" />   <!-- 0x1A86 / 0x5523 -->
+
+    <!-- Silicon Labs CP2102 / CP2104 -->
+    <usb-device vendor-id="4292" product-id="60000" />   <!-- 0x10C4 / 0xEA60 -->
+    <usb-device vendor-id="4292" product-id="60016" />   <!-- 0x10C4 / 0xEA70 -->
+
+    <!-- FTDI FT232RL -->
+    <usb-device vendor-id="1027" product-id="24577" />   <!-- 0x0403 / 0x6001 -->
+
+    <!-- Prolific PL2303 -->
+    <usb-device vendor-id="1659" product-id="8963" />    <!-- 0x067B / 0x2303 -->
+</resources>

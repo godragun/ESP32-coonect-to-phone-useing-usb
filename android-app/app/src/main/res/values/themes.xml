@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.ESP32WifiAdapter" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#0B132B</item>
+        <item name="android:windowBackground">#0B132B</item>
+    </style>
+</resources>

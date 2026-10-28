@@ -1,0 +1,23 @@
+# Android & Gradle
+.gradle/
+build/
+**/build/
+android-app/.gradle/
+android-app/build/
+android-app/app/build/
+*.iml
+.idea/
+local.properties
+.DS_Store
+
+# Arduino / ESP32 build artifacts
+*.elf
+*.o
+*.d
+esp32-firmware/**/build/
+
+# OS / Editor files
+Thumbs.db
+*.bak
+*.tmp
+.vscode/
